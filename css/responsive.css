@@ -1,0 +1,193 @@
+/* ==========================================================================
+   TECHFEST 2026 — Responsive Stylesheet
+   Breakpoints:
+   - Desktop: 1024px and above
+   - Tablet: 768px – 1023px
+   - Mobile: below 768px (tested down to 360px/390px)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Tablet Layout (max-width: 1023px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1023px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .hero-visual-card {
+    max-width: 580px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .footer-top {
+    gap: var(--space-2xl);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Layout (max-width: 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  /* Site Header & Mobile Drawer Navigation */
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-lg);
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--space-lg) var(--container-padding);
+    gap: var(--space-md);
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform var(--transition-smooth), opacity var(--transition-normal);
+    z-index: 999;
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    display: block;
+    font-size: 1.1rem;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+
+  .hero-meta-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding: var(--space-md);
+  }
+
+  .meta-divider {
+    display: none;
+  }
+
+  .hero-cta-group {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  /* Countdown Grid on Mobile */
+  .countdown-grid {
+    gap: var(--space-xs);
+  }
+
+  .countdown-box {
+    padding: var(--space-sm) 0.25rem;
+  }
+
+  .countdown-number {
+    font-size: 1.65rem;
+  }
+
+  /* Events Grid: Single Column */
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .event-card {
+    padding: var(--space-lg);
+  }
+
+  /* Schedule Timeline Stacked on Mobile */
+  .schedule-timeline::before {
+    left: 16px;
+  }
+
+  .schedule-item {
+    grid-template-columns: 1fr;
+    padding-left: 36px;
+    gap: var(--space-xs);
+  }
+
+  .schedule-time-box {
+    justify-content: flex-start;
+    padding-top: 0;
+  }
+
+  .timeline-dot {
+    position: absolute;
+    left: 11px;
+    top: 5px;
+    right: auto;
+  }
+
+  .schedule-card {
+    padding: var(--space-md);
+  }
+
+  /* Registration Form */
+  .registration-card {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  /* Footer */
+  .footer-top {
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small Mobile Screens (max-width: 380px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 380px) {
+  .countdown-number {
+    font-size: 1.4rem;
+  }
+
+  .countdown-unit {
+    font-size: 0.65rem;
+  }
+
+  .brand-logo {
+    font-size: 1.1rem;
+  }
+}
