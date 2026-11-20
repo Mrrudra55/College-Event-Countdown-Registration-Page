@@ -4,9 +4,9 @@
  */
 
 const AuthManager = (() => {
-  const STORAGE_USERS = 'techfest_2026_users';
-  const STORAGE_SESSION = 'techfest_2026_session';
-  const STORAGE_PASSES = 'techfest_2026_passes';
+  const STORAGE_USERS = 'innovex_2026_users';
+  const STORAGE_SESSION = 'innovex_2026_session';
+  const STORAGE_PASSES = 'innovex_2026_passes';
 
   /**
    * Retrieves all registered users from localStorage

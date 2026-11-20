@@ -1,5 +1,5 @@
 /**
- * TECHFEST 2026 — Registration, Authentication & Official ID Pass Module
+ * INNOVEX 2026 — Registration, Authentication & Official ID Pass Module
  * Enforces mandatory login/registration before competition application.
  * Generates verified, printable Student Event ID Passes stored in localStorage.
  */
@@ -7,42 +7,42 @@
 const RegistrationManager = (() => {
   const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-  // Metadata for event venues and schedules
+  // Metadata for event venues and schedules (Event Date: 26 November 2026)
   const EVENT_DETAILS = {
     'code-arena': {
       name: 'Code Arena (Programming)',
       venue: 'Computer Laboratory',
-      time: '10:00 AM, 21 Nov 2026',
+      time: '10:00 AM, 26 Nov 2026',
       badgeColor: '#8B5CF6'
     },
     'hack-the-future': {
       name: 'Hack the Future (Hackathon)',
       venue: 'Innovation Hall',
-      time: '02:00 PM, 21 Nov 2026',
+      time: '02:00 PM, 26 Nov 2026',
       badgeColor: '#22D3EE'
     },
     'webcraft': {
       name: 'WebCraft (Web Development)',
       venue: 'Innovation Lab',
-      time: '11:00 AM, 21 Nov 2026',
+      time: '11:00 AM, 26 Nov 2026',
       badgeColor: '#10B981'
     },
     'robo-wars': {
       name: 'Robo Wars (Robotics)',
       venue: 'Robotics Arena',
-      time: '02:00 PM, 21 Nov 2026',
+      time: '02:00 PM, 26 Nov 2026',
       badgeColor: '#F59E0B'
     },
     'brainbyte': {
       name: 'BrainByte (Technical Quiz)',
       venue: 'Main Auditorium',
-      time: '12:00 PM, 21 Nov 2026',
+      time: '12:00 PM, 26 Nov 2026',
       badgeColor: '#EC4899'
     },
     'project-expo': {
       name: 'Project Expo (Innovation)',
       venue: 'Innovation Hall',
-      time: '02:00 PM, 21 Nov 2026',
+      time: '02:00 PM, 26 Nov 2026',
       badgeColor: '#6366F1'
     }
   };
@@ -54,7 +54,7 @@ const RegistrationManager = (() => {
    */
   const generatePassNumber = () => {
     const randomDigits = Math.floor(100000 + Math.random() * 900000);
-    return `TF26-PAS-${randomDigits}`;
+    return `INX26-PAS-${randomDigits}`;
   };
 
   /**

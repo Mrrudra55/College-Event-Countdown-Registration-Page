@@ -1,7 +1,7 @@
 /**
- * TECHFEST 2026 — Countdown Module
+ * INNOVEX 2026 — Countdown Module
  * Calculates live remaining time to the festival opening.
- * Target: 21 November 2026, 09:00 AM.
+ * Target: 26 November 2026, 09:00 AM.
  */
 
 const Countdown = (() => {

@@ -1,4 +1,4 @@
-# TECHFEST 2026 — Official Website
+# INNOVEX 2026 — Official Website
 
 > **Beyond Innovation — Where Ideas Become Reality.**  
 > A premium, responsive, production-quality landing page engineered for a flagship college technology festival.
@@ -7,18 +7,18 @@
 
 ## 1. Project Overview
 
-**TECHFEST 2026** is a single-page responsive technology festival web application built strictly with vanilla web standards. Designed with a futuristic, editorial aesthetic inspired by international developer conferences (such as Next.js Conf, GitHub Universe, and ViteConf), this project demonstrates clean frontend architecture, strong visual hierarchy, modular JavaScript, accessibility compliance, and zero third-party dependencies.
+**INNOVEX 2026** is a single-page responsive technology festival web application built strictly with vanilla web standards. Designed with a futuristic, editorial aesthetic inspired by international developer conferences (such as Next.js Conf, GitHub Universe, and ViteConf), this project demonstrates clean frontend architecture, strong visual hierarchy, modular JavaScript, accessibility compliance, and zero third-party dependencies.
 
-- **Event Date:** 21 November 2026
+- **Event Date:** 26 November 2026
 - **Event Time:** 09:00 AM onwards
 - **Venue:** Main College Campus
-- **Live URL:** `[Live Website URL Placeholder — e.g. https://<username>.github.io/techfest-2026]`
+- **Live URL:** `[Live Website URL Placeholder — e.g. https://<username>.github.io/innovex-2026]`
 
 ---
 
 ## 2. Key Features
 
-- **Live Dynamic Countdown Timer:** Real-time calculation of days, hours, minutes, and seconds until the festival opening with automatic zero-state handling.
+- **Live Dynamic Countdown Timer:** Real-time calculation of days, hours, minutes, and seconds until the festival opening on **26 November 2026** with automatic zero-state handling.
 - **Student Authentication & Session Manager:** Mandatory client-side student account registration and login (stored securely in browser `localStorage`) before applying for events.
 - **Verified Official Event ID Pass & Badge:** Generates an official digital delegate lanyard pass with scannable vector QR code, barcode, security seal, and print-ready PDF stylesheet.
 - **"My Passes" Vault Modal:** Logged-in students can view and review all active competition passes they have registered for at any time.
@@ -49,7 +49,7 @@ This project strictly adheres to native web standards without frameworks, bundle
 ## 4. Project Architecture
 
 ```
-techfest-2026/
+innovex-2026/
 │
 ├── index.html                  # Semantic entry point with all festival sections
 │
@@ -59,7 +59,7 @@ techfest-2026/
 │   └── responsive.css          # Breakpoints (Mobile <768px, Tablet 768-1023px, Desktop 1024px+)
 │
 ├── js/
-│   ├── countdown.js            # Precise countdown timer logic & zero-state handler
+│   ├── countdown.js            # Live countdown timer targeting 26 Nov 2026
 │   ├── theme.js                # Dark/light theme manager & localStorage persistence
 │   ├── navigation.js           # Hamburger menu drawer, outside click, scrollspy
 │   ├── auth.js                 # Student accounts, authentication, session & pass storage
@@ -68,7 +68,7 @@ techfest-2026/
 │
 ├── assets/
 │   ├── icons/
-│   │   └── favicon.svg         # Crisp vector brand favicon
+│   │   └── favicon.svg         # Crisp vector brand favicon (Stylized "I" logo)
 │   └── images/
 │       └── .gitkeep            # Asset directory for festival photography
 │
@@ -97,13 +97,13 @@ Running through an HTTP server ensures correct origin handling:
 ## 6. Implementation Explanations (Beginner-Friendly)
 
 ### A. Live Countdown (`js/countdown.js`)
-The countdown calculates the delta between the target festival timestamp (`2026-11-21T09:00:00+05:30`) and the client's current time:
+The countdown calculates the delta between the festival timestamp (**`2026-11-26T09:00:00+05:30`**) and the client's current time:
 ```javascript
 const distance = targetDate.getTime() - new Date().getTime();
 ```
 - Remaining days, hours, minutes, and seconds are derived through division and modulo arithmetic.
 - Numbers are formatted with `String(val).padStart(2, '0')` to always display two digits (e.g. `09`).
-- When `distance <= 0`, `clearInterval()` stops execution and a zero-state banner (`"EVENT STARTED!"`) is displayed.
+- When `distance <= 0`, `clearInterval()` stops execution and a zero-state banner (`"EVENT STARTED! WELCOME TO INNOVEX 2026"`) is displayed.
 
 ### B. Theme Persistence (`js/theme.js`)
 The application determines theme preference using a 3-tier cascade:
@@ -113,12 +113,11 @@ The application determines theme preference using a 3-tier cascade:
 
 When the toggle button is clicked, `document.documentElement.setAttribute('data-theme', newTheme)` dynamically swaps all CSS custom properties defined in `css/variables.css`.
 
-### C. Client-Side Form Validation (`js/form.js`)
-- Full name is checked to ensure it contains non-whitespace characters (`value.trim().length >= 2`).
-- Email format is validated using regex: `/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/`.
-- Event selection verifies a non-empty option value is selected.
-- Errors trigger `.has-error` class styles and update `aria-invalid="true"` for screen readers. Real-time listeners clear errors as soon as the user corrects their input.
-- On valid submission, `event.preventDefault()` suppresses page refresh and displays a mock ticket pass receipt with a generated alphanumeric identifier (e.g., `TF26-9XK42`).
+### C. Student Authentication & Real ID Pass (`js/auth.js` & `js/form.js`)
+- Mandatory Student Access: Students must log in or register before applying for festival competitions.
+- Form validation verifies minimum characters, valid student email, and College ID.
+- Upon applying, an official **INNOVEX 2026 Delegate Badge** is generated with unique Pass ID (`INX26-PAS-XXXXXX`), reporting times, assigned venue, and vector QR code.
+- Clicking **"Print / Save as PDF Pass"** uses a custom `@media print` stylesheet that isolates and prints only the credential badge.
 
 ---
 
@@ -126,11 +125,11 @@ When the toggle button is clicked, `document.documentElement.setAttribute('data-
 
 | Dark Mode (Default) | Light Mode |
 |---|---|
-| ![TechFest 2026 Dark Theme](https://via.placeholder.com/600x340/080B16/22D3EE?text=TechFest+2026+Dark+Theme) | ![TechFest 2026 Light Theme](https://via.placeholder.com/600x340/F8FAFC/7048E8?text=TechFest+2026+Light+Theme) |
+| ![INNOVEX 2026 Dark Theme](https://via.placeholder.com/600x340/080B16/22D3EE?text=INNOVEX+2026+Dark+Theme) | ![INNOVEX 2026 Light Theme](https://via.placeholder.com/600x340/F8FAFC/7048E8?text=INNOVEX+2026+Light+Theme) |
 
-| Mobile Navigation | Registration Confirmation |
+| Mobile Navigation | Verified Official Pass |
 |---|---|
-| ![Mobile View](https://via.placeholder.com/300x500/101629/8B5CF6?text=Mobile+Drawer+Menu) | ![Registration Pass](https://via.placeholder.com/300x500/151E34/10B981?text=Verified+Ticket+Pass) |
+| ![Mobile View](https://via.placeholder.com/300x500/101629/8B5CF6?text=Mobile+Drawer+Menu) | ![Registration Pass](https://via.placeholder.com/300x500/151E34/10B981?text=Verified+INNOVEX+Pass) |
 
 ---
 
@@ -142,12 +141,12 @@ To publish this project live for portfolio presentations or job interviews:
    ```bash
    git init
    git add .
-   git commit -m "feat: complete TechFest 2026 production landing page"
+   git commit -m "feat: complete INNOVEX 2026 production landing page"
    ```
 
 2. **Push to GitHub:**
    ```bash
-   git remote add origin https://github.com/<your-username>/techfest-2026.git
+   git remote add origin https://github.com/<your-username>/innovex-2026.git
    git branch -M main
    git push -u origin main
    ```
@@ -158,13 +157,13 @@ To publish this project live for portfolio presentations or job interviews:
    - Under **Build and deployment** > **Source**, choose **Deploy from a branch**.
    - Select branch **`main`** and folder **`/(root)`**, then click **Save**.
    - Within 1–2 minutes, your live site will be accessible at:  
-     `https://<your-username>.github.io/techfest-2026/`
+     `https://<your-username>.github.io/innovex-2026/`
 
 ---
 
 ## 9. Known Limitations
 
-- **Simulated Form Submission:** In accordance with prompt requirements, the registration form is a frontend-only simulation; registrations are confirmed client-side without permanent server storage.
+- **Simulated Form Submission:** Client-side prototype using browser `localStorage` for authentication and pass issuance; no permanent backend database is attached.
 - **Local Time Zone Awareness:** The target date string includes timezone offset (`+05:30`); countdown calculations render accurately relative to the visitor's local system clock.
 
 ---
@@ -172,4 +171,3 @@ To publish this project live for portfolio presentations or job interviews:
 ## 10. License
 
 Created for educational, demonstration, and developer portfolio purposes. Open source under the MIT License.
-
