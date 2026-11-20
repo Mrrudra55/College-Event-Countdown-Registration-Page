@@ -9,3 +9,4 @@
   <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="url(#grad)" stroke-width="2" opacity="0.6"/>
   <path d="M18 20 H46 V26 H35 V48 H29 V26 H18 Z" fill="url(#grad)"/>
 </svg>
+

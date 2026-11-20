@@ -152,9 +152,54 @@
     padding: var(--space-md);
   }
 
-  /* Registration Form */
+  /* Registration & Auth Form on Mobile */
   .registration-card {
     padding: var(--space-lg) var(--space-md);
+  }
+
+  .auth-tabs {
+    flex-direction: column;
+  }
+
+  .auth-user-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Digital ID Pass on Mobile */
+  .official-id-pass {
+    max-width: 100%;
+  }
+
+  .pass-badge-body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .pass-meta-row {
+    justify-content: center;
+  }
+
+  .pass-grid-info {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-sm);
+  }
+
+  .pass-badge-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-md);
+  }
+
+  .pass-action-buttons {
+    flex-direction: column;
+  }
+
+  .pass-action-buttons .btn {
+    width: 100%;
   }
 
   /* Footer */
@@ -191,3 +236,4 @@
     font-size: 1.1rem;
   }
 }
+

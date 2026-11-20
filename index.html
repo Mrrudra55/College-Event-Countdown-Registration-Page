@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TECHFEST 2026 — Beyond Innovation. Explore flagship competitions, view the festival schedule, and register for the premier college technology festival.">
+  <meta name="description"
+    content="TECHFEST 2026 — Beyond Innovation. Explore flagship competitions, view the festival schedule, and register for the premier college technology festival.">
   <meta name="theme-color" content="#080B16">
-  <title>TECHFEST 2026 — Where Ideas Become Innovation</title>
+  <title>INNOVEX 2026 — Where Ideas Become Innovation</title>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
@@ -15,6 +17,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 
   <!-- Accessible Skip Navigation Link -->
@@ -28,7 +31,7 @@
       <!-- Brand Logo / Wordmark -->
       <a href="#home" class="brand-logo" aria-label="TECHFEST 2026 Home">
         <span class="logo-symbol" aria-hidden="true">T</span>
-        <span>TECHFEST</span>
+        <span>INNOVEX 2026</span>
         <span class="logo-year">2026</span>
       </a>
 
@@ -40,10 +43,14 @@
         <a href="#register" class="nav-link">Register</a>
       </nav>
 
-      <!-- Navigation Actions: Theme Switcher & Mobile Menu Toggle -->
+      <!-- Navigation Actions: Auth Pill, Theme Switcher & Mobile Menu Toggle -->
       <div class="nav-actions">
+        <!-- Dynamic User Auth Status (Sign In button or User Avatar/Passes badge) -->
+        <div id="nav-auth-container" class="nav-auth-container"></div>
+
         <!-- Dark / Light Theme Toggle -->
-        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode">
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Switch to light mode"
+          title="Switch to light mode">
           <!-- Sun Icon (displayed in dark theme to switch to light) -->
           <svg class="theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24">
             <circle cx="12" cy="12" r="5"></circle>
@@ -63,7 +70,8 @@
         </button>
 
         <!-- Mobile Menu Toggle Button (Hamburger) -->
-        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-label="Open navigation menu"
+          aria-expanded="false" aria-controls="nav-menu">
           <span class="hamburger-line" aria-hidden="true"></span>
           <span class="hamburger-line" aria-hidden="true"></span>
           <span class="hamburger-line" aria-hidden="true"></span>
@@ -83,7 +91,7 @@
     <section class="section-wrapper hero-section" id="home" aria-labelledby="hero-heading">
       <div class="container">
         <div class="hero-grid">
-          
+
           <!-- Hero Left Column: Editorial Headline & Meta -->
           <div class="hero-content">
             <div class="status-badge">
@@ -97,25 +105,28 @@
             </h1>
 
             <p class="hero-description">
-              Explore technology. Challenge limits. Build tomorrow. Join the next generation of innovators, developers, and creative problem solvers at TechFest 2026.
+              Explore technology. Challenge limits. Build tomorrow. Join the next generation of innovators, developers,
+              and creative problem solvers at INNOVEX 2026.
             </p>
 
             <!-- Event Date, Time & Venue Bar -->
             <div class="hero-meta-bar" role="region" aria-label="Event Details">
               <div class="meta-item">
-                <svg class="meta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="meta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
                   <line x1="16" y1="2" x2="16" y2="6"></line>
                   <line x1="8" y1="2" x2="8" y2="6"></line>
                   <line x1="3" y1="10" x2="21" y2="10"></line>
                 </svg>
-                <span><strong>21 November 2026</strong></span>
+                <span><strong>26 November 2026</strong></span>
               </div>
 
               <div class="meta-divider" aria-hidden="true"></div>
 
               <div class="meta-item">
-                <svg class="meta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="meta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <circle cx="12" cy="12" r="10"></circle>
                   <polyline points="12 6 12 12 16 14"></polyline>
                 </svg>
@@ -125,7 +136,8 @@
               <div class="meta-divider" aria-hidden="true"></div>
 
               <div class="meta-item">
-                <svg class="meta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg class="meta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
@@ -138,7 +150,8 @@
               <a href="#events" class="btn btn-secondary">Explore Events</a>
               <a href="#register" class="btn btn-primary">
                 Register Now
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
@@ -186,7 +199,8 @@
               <div class="tech-decor">
                 <span>SYSTEM STATUS: NORMAL</span>
                 <svg class="tech-decor-graphic" viewBox="0 0 160 28" fill="none" aria-hidden="true">
-                  <path d="M0 14H40L50 4L65 24L80 14H160" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M0 14H40L50 4L65 24L80 14H160" stroke="currentColor" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
                 <span>SYS_VER: 2026.1</span>
               </div>
@@ -202,13 +216,14 @@
          ======================================================================== -->
     <section class="section-wrapper" id="events" aria-labelledby="events-heading">
       <div class="container">
-        
+
         <!-- Section Header -->
         <div class="section-header">
           <span class="section-eyebrow">FEATURED COMPETITIONS</span>
           <h2 class="section-title" id="events-heading">Explore Our Flagship Events</h2>
           <p class="section-subtitle">
-            Compete with the sharpest minds across software engineering, rapid prototyping, robotics, and creative problem-solving.
+            Compete with the sharpest minds across software engineering, rapid prototyping, robotics, and creative
+            problem-solving.
           </p>
         </div>
 
@@ -222,17 +237,20 @@
               <span class="event-badge">Programming</span>
             </div>
             <div class="event-icon-box" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="16 18 22 12 16 6"></polyline>
                 <polyline points="8 6 2 12 8 18"></polyline>
               </svg>
             </div>
             <h3 class="event-card-title">Code Arena</h3>
             <p class="event-card-description">
-              Test your coding skills through challenging programming problems, complex data structures, and optimized algorithms under tight time constraints.
+              Test your coding skills through challenging programming problems, complex data structures, and optimized
+              algorithms under tight time constraints.
             </p>
             <div class="event-card-footer">
-              <button type="button" class="event-select-btn" data-select-event="code-arena" aria-label="Register for Code Arena">
+              <button type="button" class="event-select-btn" data-select-event="code-arena"
+                aria-label="Register for Code Arena">
                 <span>Register for this event</span>
                 <span aria-hidden="true">&rarr;</span>
               </button>
@@ -246,16 +264,21 @@
               <span class="event-badge">Hackathon</span>
             </div>
             <div class="event-icon-box" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                </path>
               </svg>
             </div>
             <h3 class="event-card-title">Hack the Future</h3>
             <p class="event-card-description">
-              Transform creative ideas into practical technology solutions during an intensive development sprint focused on real-world impact.
+              Transform creative ideas into practical technology solutions during an intensive development sprint
+              focused on real-world impact.
             </p>
             <div class="event-card-footer">
-              <button type="button" class="event-select-btn" data-select-event="hack-the-future" aria-label="Register for Hack the Future">
+              <button type="button" class="event-select-btn" data-select-event="hack-the-future"
+                aria-label="Register for Hack the Future">
                 <span>Register for this event</span>
                 <span aria-hidden="true">&rarr;</span>
               </button>
@@ -269,18 +292,22 @@
               <span class="event-badge">Web Development</span>
             </div>
             <div class="event-icon-box" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="2" y1="12" x2="22" y2="12"></line>
-                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
               </svg>
             </div>
             <h3 class="event-card-title">WebCraft</h3>
             <p class="event-card-description">
-              Design and develop innovative digital experiences. Showcase mastery of responsive architecture, accessibility, micro-interactions, and visual flair.
+              Design and develop innovative digital experiences. Showcase mastery of responsive architecture,
+              accessibility, micro-interactions, and visual flair.
             </p>
             <div class="event-card-footer">
-              <button type="button" class="event-select-btn" data-select-event="webcraft" aria-label="Register for WebCraft">
+              <button type="button" class="event-select-btn" data-select-event="webcraft"
+                aria-label="Register for WebCraft">
                 <span>Register for this event</span>
                 <span aria-hidden="true">&rarr;</span>
               </button>
@@ -294,7 +321,8 @@
               <span class="event-badge">Robotics</span>
             </div>
             <div class="event-icon-box" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <rect x="3" y="11" width="18" height="10" rx="2"></rect>
                 <circle cx="12" cy="5" r="2"></circle>
                 <path d="M12 7v4"></path>
@@ -304,10 +332,12 @@
             </div>
             <h3 class="event-card-title">Robo Wars</h3>
             <p class="event-card-description">
-              Explore robotics, automation and engineering challenges. Build custom bots and test endurance, mechanics, and autonomous navigation in custom arenas.
+              Explore robotics, automation and engineering challenges. Build custom bots and test endurance, mechanics,
+              and autonomous navigation in custom arenas.
             </p>
             <div class="event-card-footer">
-              <button type="button" class="event-select-btn" data-select-event="robo-wars" aria-label="Register for Robo Wars">
+              <button type="button" class="event-select-btn" data-select-event="robo-wars"
+                aria-label="Register for Robo Wars">
                 <span>Register for this event</span>
                 <span aria-hidden="true">&rarr;</span>
               </button>
@@ -321,7 +351,8 @@
               <span class="event-badge">Technical Quiz</span>
             </div>
             <div class="event-icon-box" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="12" y1="17" x2="12.01" y2="17"></line>
@@ -329,10 +360,12 @@
             </div>
             <h3 class="event-card-title">BrainByte</h3>
             <p class="event-card-description">
-              Challenge your technical knowledge, logical thinking, and computer science fundamentals through fast-paced multi-stage rounds.
+              Challenge your technical knowledge, logical thinking, and computer science fundamentals through fast-paced
+              multi-stage rounds.
             </p>
             <div class="event-card-footer">
-              <button type="button" class="event-select-btn" data-select-event="brainbyte" aria-label="Register for BrainByte">
+              <button type="button" class="event-select-btn" data-select-event="brainbyte"
+                aria-label="Register for BrainByte">
                 <span>Register for this event</span>
                 <span aria-hidden="true">&rarr;</span>
               </button>
@@ -346,17 +379,20 @@
               <span class="event-badge">Innovation</span>
             </div>
             <div class="event-icon-box" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
                 <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
               </svg>
             </div>
             <h3 class="event-card-title">Project Expo</h3>
             <p class="event-card-description">
-              Showcase creative projects and practical innovations to industry experts, faculty panels, and fellow student builders.
+              Showcase creative projects and practical innovations to industry experts, faculty panels, and fellow
+              student builders.
             </p>
             <div class="event-card-footer">
-              <button type="button" class="event-select-btn" data-select-event="project-expo" aria-label="Register for Project Expo">
+              <button type="button" class="event-select-btn" data-select-event="project-expo"
+                aria-label="Register for Project Expo">
                 <span>Register for this event</span>
                 <span aria-hidden="true">&rarr;</span>
               </button>
@@ -372,13 +408,14 @@
          ======================================================================== -->
     <section class="section-wrapper" id="schedule" aria-labelledby="schedule-heading">
       <div class="container">
-        
+
         <!-- Section Header -->
         <div class="section-header">
           <span class="section-eyebrow">FESTIVAL TIMELINE</span>
           <h2 class="section-title" id="schedule-heading">Event Schedule</h2>
           <p class="section-subtitle">
-            A comprehensive overview of keynotes, coding challenges, break times, and presentations scheduled throughout festival day.
+            A comprehensive overview of keynotes, coding challenges, break times, and presentations scheduled throughout
+            festival day.
           </p>
         </div>
 
@@ -396,7 +433,8 @@
                 <div class="schedule-card-top">
                   <h3 class="schedule-title">Opening Ceremony</h3>
                   <span class="venue-tag">
-                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" aria-hidden="true">
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                       <circle cx="12" cy="10" r="3"></circle>
                     </svg>
@@ -404,7 +442,8 @@
                   </span>
                 </div>
                 <p class="schedule-desc">
-                  Welcome address, keynote speeches by distinguished tech leaders, and the official unveiling of TechFest 2026.
+                  Welcome address, keynote speeches by distinguished tech leaders, and the official unveiling of
+                  TechFest 2026.
                 </p>
               </div>
             </div>
@@ -419,7 +458,8 @@
                 <div class="schedule-card-top">
                   <h3 class="schedule-title">Code Arena</h3>
                   <span class="venue-tag">
-                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" aria-hidden="true">
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                       <circle cx="12" cy="10" r="3"></circle>
                     </svg>
@@ -427,7 +467,8 @@
                   </span>
                 </div>
                 <p class="schedule-desc">
-                  Round 1 algorithmic sprint. Programmers tackle automated edge cases, time complexity optimizations, and live leaderboards.
+                  Round 1 algorithmic sprint. Programmers tackle automated edge cases, time complexity optimizations,
+                  and live leaderboards.
                 </p>
               </div>
             </div>
@@ -442,7 +483,8 @@
                 <div class="schedule-card-top">
                   <h3 class="schedule-title">WebCraft</h3>
                   <span class="venue-tag">
-                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" aria-hidden="true">
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                       <circle cx="12" cy="10" r="3"></circle>
                     </svg>
@@ -450,7 +492,8 @@
                   </span>
                 </div>
                 <p class="schedule-desc">
-                  Interactive web development challenge evaluating responsive design systems, modern DOM performance, and usability standards.
+                  Interactive web development challenge evaluating responsive design systems, modern DOM performance,
+                  and usability standards.
                 </p>
               </div>
             </div>
@@ -465,7 +508,8 @@
                 <div class="schedule-card-top">
                   <h3 class="schedule-title">Technical Quiz</h3>
                   <span class="venue-tag">
-                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" aria-hidden="true">
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                       <circle cx="12" cy="10" r="3"></circle>
                     </svg>
@@ -473,7 +517,8 @@
                   </span>
                 </div>
                 <p class="schedule-desc">
-                  Rapid-fire buzzer rounds testing computer architecture, operating systems, distributed networks, and modern tech trivia.
+                  Rapid-fire buzzer rounds testing computer architecture, operating systems, distributed networks, and
+                  modern tech trivia.
                 </p>
               </div>
             </div>
@@ -488,7 +533,8 @@
                 <div class="schedule-card-top">
                   <h3 class="schedule-title">Lunch Break</h3>
                   <span class="venue-tag">
-                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" aria-hidden="true">
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                       <circle cx="12" cy="10" r="3"></circle>
                     </svg>
@@ -496,7 +542,8 @@
                   </span>
                 </div>
                 <p class="schedule-desc">
-                  Complimentary lunch buffet, informal student-mentor networking, and interactive sponsor exhibit visits.
+                  Complimentary lunch buffet, informal student-mentor networking, and interactive sponsor exhibit
+                  visits.
                 </p>
               </div>
             </div>
@@ -511,7 +558,8 @@
                 <div class="schedule-card-top">
                   <h3 class="schedule-title">Hackathon and Project Expo</h3>
                   <span class="venue-tag">
-                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <svg class="venue-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" aria-hidden="true">
                       <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                       <circle cx="12" cy="10" r="3"></circle>
                     </svg>
@@ -519,7 +567,8 @@
                   </span>
                 </div>
                 <p class="schedule-desc">
-                  Final prototype pitches, Robo Wars elimination playoffs, jury Q&A sessions, and valedictory awards ceremony.
+                  Final prototype pitches, Robo Wars elimination playoffs, jury Q&A sessions, and valedictory awards
+                  ceremony.
                 </p>
               </div>
             </div>
@@ -531,147 +580,291 @@
     </section>
 
     <!-- ========================================================================
-         SECTION 5: Registration Form
+         SECTION 5: Registration & Official Event Pass Portal
          ======================================================================== -->
     <section class="section-wrapper" id="register" aria-labelledby="register-heading">
       <div class="container">
-        
+
         <!-- Section Header -->
         <div class="section-header">
-          <span class="section-eyebrow">JOIN THE FESTIVAL</span>
-          <h2 class="section-title" id="register-heading">Register for TechFest 2026</h2>
+          <span class="section-eyebrow">PARTICIPANT PORTAL</span>
+          <h2 class="section-title" id="register-heading">Festival Pass &amp; Registration</h2>
           <p class="section-subtitle">
-            Secure your participation pass for your chosen event. Fill in your details below to generate your event registration pass.
+            Sign in with your student credentials or create an account to apply for festival competitions and unlock your verified TechFest 2026 digital event pass.
           </p>
         </div>
 
         <div class="registration-container">
           <div class="registration-card">
-            
-            <!-- Frontend Demonstration Disclaimer Badge -->
-            <div class="form-demo-badge" role="note">
-              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="16" x2="12" y2="12"></line>
-                <line x1="12" y1="8" x2="12.01" y2="8"></line>
-              </svg>
-              <span><strong>Frontend Demonstration:</strong> No server submission or database storage is performed.</span>
+
+            <!-- ================================================================
+                 STATE 1: AUTH GATE (When User is NOT Logged In)
+                 ================================================================ -->
+            <div id="auth-gate-container" class="auth-gate-container">
+
+              <!-- Prompt banner if an event was chosen from an event card -->
+              <div class="auth-prompt-badge" id="auth-prompt-badge" style="display: none;" role="status"></div>
+
+              <!-- Auth Tabs -->
+              <div class="auth-tabs" role="tablist" aria-label="Student Access Tabs">
+                <button type="button" class="auth-tab-btn active" id="tab-btn-login" role="tab" aria-selected="true" aria-controls="auth-form-login">
+                  Student Sign In
+                </button>
+                <button type="button" class="auth-tab-btn" id="tab-btn-register" role="tab" aria-selected="false" aria-controls="auth-form-register">
+                  Create Student Account
+                </button>
+              </div>
+
+              <!-- Form 1: Student Login -->
+              <form class="auth-form" id="auth-form-login" novalidate aria-label="Student Sign In Form">
+                <div class="form-helper-note">
+                  <span>💡 <strong>Quick Test Account:</strong> <code>alex@university.edu</code> / <code>password123</code> (or create a new account)</span>
+                </div>
+
+                <div class="form-group" id="group-login-email">
+                  <label for="login-email" class="form-label">
+                    Email Address <span class="required-indicator" aria-hidden="true">*</span>
+                  </label>
+                  <input type="email" id="login-email" class="form-input" placeholder="e.g. alex@university.edu" autocomplete="email" required>
+                </div>
+
+                <div class="form-group" id="group-login-password">
+                  <label for="login-password" class="form-label">
+                    Password <span class="required-indicator" aria-hidden="true">*</span>
+                  </label>
+                  <input type="password" id="login-password" class="form-input" placeholder="Enter your password" autocomplete="current-password" required>
+                </div>
+
+                <div class="auth-error-banner" id="login-error-msg" role="alert" style="display: none;"></div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="btn-submit-login">
+                  <span>Sign In &amp; Unlock Event Registration</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </form>
+
+              <!-- Form 2: Student Account Creation -->
+              <form class="auth-form" id="auth-form-register" style="display: none;" novalidate aria-label="Student Registration Form">
+                <div class="form-group" id="group-signup-name">
+                  <label for="signup-name" class="form-label">
+                    Full Name <span class="required-indicator" aria-hidden="true">*</span>
+                  </label>
+                  <input type="text" id="signup-name" class="form-input" placeholder="e.g. Alex Rivera" autocomplete="name" required>
+                </div>
+
+                <div class="form-group" id="group-signup-college">
+                  <label for="signup-college-id" class="form-label">
+                    Student / College ID <span class="required-indicator" aria-hidden="true">*</span>
+                  </label>
+                  <input type="text" id="signup-college-id" class="form-input" placeholder="e.g. TECH-2026-089" required>
+                </div>
+
+                <div class="form-group" id="group-signup-email">
+                  <label for="signup-email" class="form-label">
+                    College / University Email <span class="required-indicator" aria-hidden="true">*</span>
+                  </label>
+                  <input type="email" id="signup-email" class="form-input" placeholder="e.g. alex.rivera@university.edu" autocomplete="email" required>
+                </div>
+
+                <div class="form-group" id="group-signup-password">
+                  <label for="signup-password" class="form-label">
+                    Create Password <span class="required-indicator" aria-hidden="true">*</span>
+                  </label>
+                  <input type="password" id="signup-password" class="form-input" placeholder="At least 6 characters" autocomplete="new-password" required>
+                </div>
+
+                <div class="auth-error-banner" id="signup-error-msg" role="alert" style="display: none;"></div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="btn-submit-signup">
+                  <span>Create Account &amp; Unlock Passes</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </form>
+
             </div>
 
-            <!-- Registration Form Element -->
-            <form class="registration-form" id="registration-form" novalidate aria-label="TechFest 2026 Registration Form">
-              
-              <!-- Field 1: Full Name -->
-              <div class="form-group" id="group-name">
-                <label for="reg-name" class="form-label">
-                  Full Name
-                  <span class="required-indicator" aria-hidden="true">*</span>
-                </label>
-                <input 
-                  type="text" 
-                  id="reg-name" 
-                  name="fullName" 
-                  class="form-input" 
-                  placeholder="e.g. Alex Rivera" 
-                  autocomplete="name" 
-                  required
-                  aria-describedby="error-name"
-                >
-                <div class="error-message" id="error-name" role="alert" aria-live="polite"></div>
-              </div>
+            <!-- ================================================================
+                 STATE 2: COMPETITION APPLICATION (When User IS Logged In)
+                 ================================================================ -->
+            <div id="event-application-container" class="event-application-container" style="display: none;">
 
-              <!-- Field 2: Email Address -->
-              <div class="form-group" id="group-email">
-                <label for="reg-email" class="form-label">
-                  Email Address
-                  <span class="required-indicator" aria-hidden="true">*</span>
-                </label>
-                <input 
-                  type="email" 
-                  id="reg-email" 
-                  name="emailAddress" 
-                  class="form-input" 
-                  placeholder="e.g. alex.rivera@university.edu" 
-                  autocomplete="email" 
-                  required
-                  aria-describedby="error-email"
-                >
-                <div class="error-message" id="error-email" role="alert" aria-live="polite"></div>
-              </div>
-
-              <!-- Field 3: Select Event -->
-              <div class="form-group" id="group-event">
-                <label for="reg-event" class="form-label">
-                  Select Event
-                  <span class="required-indicator" aria-hidden="true">*</span>
-                </label>
-                <div class="select-wrapper">
-                  <select id="reg-event" name="selectedEvent" class="form-select" required aria-describedby="error-event">
-                    <option value="" disabled selected>— Choose your competition —</option>
-                    <option value="code-arena">Code Arena (Programming)</option>
-                    <option value="hack-the-future">Hack the Future (Hackathon)</option>
-                    <option value="webcraft">WebCraft (Web Development)</option>
-                    <option value="robo-wars">Robo Wars (Robotics)</option>
-                    <option value="brainbyte">BrainByte (Technical Quiz)</option>
-                    <option value="project-expo">Project Expo (Innovation)</option>
-                  </select>
-                  <svg class="select-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
+              <!-- Verified Student Profile Bar -->
+              <div class="auth-user-bar">
+                <div class="auth-user-meta">
+                  <div class="user-status-dot" aria-hidden="true"></div>
+                  <div>
+                    <span class="auth-user-greeting">Verified Student: <strong id="app-user-name">Alex Rivera</strong></span>
+                    <span class="auth-user-sub">College ID: <strong id="app-user-college">TECH-2026-089</strong> • <span id="app-user-email">alex@university.edu</span></span>
+                  </div>
                 </div>
-                <div class="error-message" id="error-event" role="alert" aria-live="polite"></div>
+                <button type="button" class="btn-portal-logout" id="portal-logout-btn" title="Sign out of this student account">
+                  Sign Out
+                </button>
               </div>
 
-              <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary btn-block" id="btn-submit">
-                <span>Confirm &amp; Register Pass</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-              </button>
-            </form>
+              <!-- Event Application Form -->
+              <form class="registration-form" id="event-application-form" novalidate aria-label="Competition Pass Application Form">
+                <div class="form-group" id="group-apply-event">
+                  <label for="apply-event-select" class="form-label">
+                    Select Competition to Apply <span class="required-indicator" aria-hidden="true">*</span>
+                  </label>
+                  <div class="select-wrapper">
+                    <select id="apply-event-select" name="eventSelect" class="form-select" required>
+                      <option value="" disabled selected>— Choose competition to generate pass —</option>
+                      <option value="code-arena">Code Arena (Programming)</option>
+                      <option value="hack-the-future">Hack the Future (Hackathon)</option>
+                      <option value="webcraft">WebCraft (Web Development)</option>
+                      <option value="robo-wars">Robo Wars (Robotics)</option>
+                      <option value="brainbyte">BrainByte (Technical Quiz)</option>
+                      <option value="project-expo">Project Expo (Innovation)</option>
+                    </select>
+                    <svg class="select-arrow" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                  </div>
+                </div>
 
-            <!-- Success Confirmation Card (Hidden by default, displayed upon successful client validation) -->
-            <div class="success-card" id="registration-success" role="region" aria-label="Registration Confirmation">
-              <div class="success-icon-wrap" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <div class="auth-error-banner" id="apply-error-msg" role="alert" style="display: none;"></div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="btn-submit-apply">
+                  <span>Apply &amp; Generate Verified ID Pass</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+              </form>
+
+            </div>
+
+            <!-- ================================================================
+                 STATE 3: THE REAL ID PASS (Official Lanyard Delegate Badge)
+                 ================================================================ -->
+            <div id="active-pass-container" class="active-pass-container" style="display: none;">
+
+              <div class="pass-success-alert" role="status">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
                 </svg>
+                <span>Application Approved! Your verified TechFest 2026 Delegate Pass is ready.</span>
               </div>
 
-              <h3 class="success-title">Registration Confirmed!</h3>
-              <p class="success-desc">
-                Your entry pass for TechFest 2026 has been generated. Below is your demonstration pass receipt.
-              </p>
+              <!-- Printable Official ID Pass / Lanyard Badge -->
+              <div class="official-id-pass" id="printable-event-pass" role="region" aria-label="Official Festival Entry Pass">
+                <div class="pass-lanyard-hole" aria-hidden="true"></div>
 
-              <!-- Ticket Receipt Details -->
-              <div class="ticket-receipt">
-                <div class="receipt-row">
-                  <span class="receipt-label">Pass ID:</span>
-                  <span class="receipt-value" id="receipt-pass">TF26-DEMO</span>
+                <div class="pass-badge-header">
+                  <div class="pass-brand">
+                    <span class="pass-logo-badge" aria-hidden="true">T</span>
+                    <span class="pass-brand-text">TECHFEST 2026</span>
+                  </div>
+                  <span class="pass-type-chip">OFFICIAL DELEGATE</span>
                 </div>
-                <div class="receipt-row">
-                  <span class="receipt-label">Participant:</span>
-                  <span class="receipt-value" id="receipt-name">—</span>
+
+                <div class="pass-badge-body">
+                  <div class="pass-avatar-box">
+                    <svg class="pass-avatar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span class="pass-verified-seal">VERIFIED</span>
+                  </div>
+
+                  <div class="pass-details">
+                    <span class="pass-id-label">OFFICIAL PASS ID</span>
+                    <span class="pass-id-value" id="pass-badge-id">TF26-PAS-000000</span>
+
+                    <h3 class="pass-participant-name" id="pass-student-name">Alex Rivera</h3>
+                    <div class="pass-meta-row">
+                      <span class="pass-college" id="pass-student-college">TECH-2026-089</span>
+                      <span class="pass-dot">•</span>
+                      <span class="pass-email" id="pass-student-email">alex@university.edu</span>
+                    </div>
+
+                    <div class="pass-event-highlight">
+                      <span class="pass-field-label">COMPETITION / EVENT</span>
+                      <span class="pass-event-title" id="pass-event-name">Code Arena (Programming)</span>
+                    </div>
+
+                    <div class="pass-grid-info">
+                      <div>
+                        <span class="pass-field-label">VENUE</span>
+                        <span class="pass-grid-val" id="pass-event-venue">Computer Laboratory</span>
+                      </div>
+                      <div>
+                        <span class="pass-field-label">REPORTING TIME</span>
+                        <span class="pass-grid-val" id="pass-event-time">10:00 AM, 21 Nov 2026</span>
+                      </div>
+                      <div>
+                        <span class="pass-field-label">DATE ISSUED</span>
+                        <span class="pass-grid-val" id="pass-issued-date">Nov 20, 2026</span>
+                      </div>
+                      <div>
+                        <span class="pass-field-label">SECURITY STATUS</span>
+                        <span class="pass-grid-val pass-status-active">Active Delegate</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="receipt-row">
-                  <span class="receipt-label">Email:</span>
-                  <span class="receipt-value" id="receipt-email">—</span>
-                </div>
-                <div class="receipt-row">
-                  <span class="receipt-label">Event:</span>
-                  <span class="receipt-value" id="receipt-event">—</span>
-                </div>
-                <div class="receipt-row">
-                  <span class="receipt-label">Status:</span>
-                  <span class="receipt-value" style="color: var(--success-color);">Verified Pass</span>
+
+                <!-- Pass Footer with Vector QR Code & Barcode -->
+                <div class="pass-badge-footer">
+                  <div class="pass-qr-box" aria-hidden="true">
+                    <svg viewBox="0 0 100 100" width="70" height="70" fill="currentColor">
+                      <rect width="30" height="30" fill="currentColor"/>
+                      <rect x="6" y="6" width="18" height="18" fill="var(--bg-card)"/>
+                      <rect x="10" y="10" width="10" height="10" fill="currentColor"/>
+                      <rect x="70" width="30" height="30" fill="currentColor"/>
+                      <rect x="76" y="6" width="18" height="18" fill="var(--bg-card)"/>
+                      <rect x="80" y="10" width="10" height="10" fill="currentColor"/>
+                      <rect y="70" width="30" height="30" fill="currentColor"/>
+                      <rect x="6" y="76" width="18" height="18" fill="var(--bg-card)"/>
+                      <rect x="10" y="80" width="10" height="10" fill="currentColor"/>
+                      <rect x="36" y="10" width="8" height="8"/>
+                      <rect x="52" y="10" width="8" height="8"/>
+                      <rect x="36" y="26" width="8" height="8"/>
+                      <rect x="44" y="34" width="12" height="12"/>
+                      <rect x="64" y="36" width="8" height="8"/>
+                      <rect x="36" y="52" width="12" height="8"/>
+                      <rect x="56" y="52" width="8" height="8"/>
+                      <rect x="72" y="52" width="16" height="8"/>
+                      <rect x="40" y="70" width="8" height="16"/>
+                      <rect x="56" y="70" width="14" height="8"/>
+                      <rect x="78" y="72" width="12" height="12"/>
+                      <rect x="56" y="86" width="16" height="8"/>
+                    </svg>
+                  </div>
+                  <div class="pass-barcode-box" aria-hidden="true">
+                    <div class="barcode-lines"></div>
+                    <span class="barcode-sub">AUTHENTICATED DIGITAL ENTRY PERMIT • TECHFEST 2026</span>
+                  </div>
                 </div>
               </div>
 
-              <button type="button" class="btn btn-secondary btn-block" id="btn-register-another">
-                Register Another Participant
-              </button>
+              <!-- Pass Action Controls -->
+              <div class="pass-action-buttons">
+                <button type="button" class="btn btn-primary" id="btn-print-pass">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                    <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                    <rect x="6" y="14" width="12" height="8"></rect>
+                  </svg>
+                  <span>Print / Save as PDF Pass</span>
+                </button>
+
+                <button type="button" class="btn btn-secondary" id="btn-apply-another">
+                  Register for Another Competition
+                </button>
+
+                <button type="button" class="btn btn-secondary" id="btn-view-all-passes">
+                  View All My Passes
+                </button>
+              </div>
+
             </div>
 
           </div>
@@ -687,31 +880,33 @@
        ========================================================================== -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      
+
       <div class="footer-top">
-        
+
         <!-- Brand & Description -->
         <div class="footer-brand">
           <a href="#home" class="brand-logo" aria-label="TECHFEST 2026 Home">
             <span class="logo-symbol" aria-hidden="true">T</span>
-            <span>TECHFEST</span>
+            <span>INNOVEX</span>
             <span class="logo-year">2026</span>
           </a>
           <p class="footer-description">
-            Beyond Innovation — Where Ideas Become Reality. The flagship annual technology festival uniting student creators, software developers, and technology pioneers.
+            Beyond Innovation — Where Ideas Become Reality. The flagship annual technology festival uniting student
+            creators, software developers, and technology pioneers.
           </p>
           <a href="mailto:contact@techfest2026.edu" class="footer-contact">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
-            <span>contact@techfest2026.edu</span>
+            <span>nayakkrish446@gmail.com</span>
           </a>
         </div>
 
         <!-- Navigation Links Columns -->
         <div class="footer-nav">
-          
+
           <div class="footer-nav-col">
             <span class="footer-heading">Quick Links</span>
             <a href="#home" class="footer-link">Home</a>
@@ -732,15 +927,21 @@
             <span class="footer-heading">Connect With Us</span>
             <div class="social-links" aria-label="Social media channels">
               <!-- GitHub Placeholder -->
-              <a href="https://github.com" class="social-icon-link" aria-label="GitHub Profile (Placeholder)" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              <a href="https://github.com/Mrrudra55" class="social-icon-link" aria-label="GitHub Profile (Placeholder)"
+                target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
                 </svg>
               </a>
 
               <!-- LinkedIn Placeholder -->
-              <a href="https://linkedin.com" class="social-icon-link" aria-label="LinkedIn Page (Placeholder)" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <a href="https://linkedin.com/in/rudra-pratap-nayak-b80953342" class="social-icon-link"
+                aria-label="LinkedIn Page (Placeholder)" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
                   <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
                   <rect x="2" y="9" width="4" height="12"></rect>
                   <circle cx="4" cy="4" r="2"></circle>
@@ -748,15 +949,21 @@
               </a>
 
               <!-- Twitter / X Placeholder -->
-              <a href="https://twitter.com" class="social-icon-link" aria-label="Twitter Profile (Placeholder)" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              <a href="https://twitter.com" class="social-icon-link" aria-label="Twitter Profile (Placeholder)"
+                target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                  </path>
                 </svg>
               </a>
 
               <!-- Instagram Placeholder -->
-              <a href="https://instagram.com" class="social-icon-link" aria-label="Instagram Profile (Placeholder)" target="_blank" rel="noopener noreferrer">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <a href="https://instagram.com" class="social-icon-link" aria-label="Instagram Profile (Placeholder)"
+                target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  aria-hidden="true">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                   <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
@@ -778,12 +985,29 @@
   </footer>
 
   <!-- ==========================================================================
+       MODAL: View Registered Festival Passes
+       ========================================================================== -->
+  <dialog class="passes-modal" id="my-passes-modal" aria-labelledby="modal-passes-title">
+    <div class="modal-dialog-content">
+      <div class="modal-header">
+        <h3 id="modal-passes-title">My Registered Passes</h3>
+        <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="my-passes-list">
+        <!-- Injected dynamically by form.js -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ==========================================================================
        SCRIPTS: Modular Vanilla ES6 Architecture
        ========================================================================== -->
   <script src="js/theme.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/navigation.js"></script>
+  <script src="js/auth.js"></script>
   <script src="js/form.js"></script>
   <script src="js/script.js"></script>
 </body>
+
 </html>

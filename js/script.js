@@ -19,7 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
     window.TechfestCountdown.init();
   }
 
-  // 4. Initialize Registration Form Validation & Pre-selection
+  // 4. Initialize Authentication & Local Storage Data Store
+  if (window.TechfestAuth && typeof window.TechfestAuth.init === 'function') {
+    window.TechfestAuth.init();
+  }
+
+  // 5. Initialize Registration Form, Auth Gate & Event Pass Manager
   if (window.TechfestForm && typeof window.TechfestForm.init === 'function') {
     window.TechfestForm.init();
   }

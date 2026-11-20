@@ -7,7 +7,7 @@
 const Countdown = (() => {
   // Configuration: Event date ISO-8601 string
   // Easy to adjust if the festival date changes
-  const EVENT_DATE_ISO = '2026-11-21T09:00:00+05:30';
+  const EVENT_DATE_ISO = '2026-11-26T09:00:00+05:30';
 
   let timerInterval = null;
 
@@ -102,3 +102,4 @@ const Countdown = (() => {
 
 // Export globally for script.js
 window.TechfestCountdown = Countdown;
+

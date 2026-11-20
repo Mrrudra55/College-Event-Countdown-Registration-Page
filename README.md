@@ -19,11 +19,14 @@
 ## 2. Key Features
 
 - **Live Dynamic Countdown Timer:** Real-time calculation of days, hours, minutes, and seconds until the festival opening with automatic zero-state handling.
+- **Student Authentication & Session Manager:** Mandatory client-side student account registration and login (stored securely in browser `localStorage`) before applying for events.
+- **Verified Official Event ID Pass & Badge:** Generates an official digital delegate lanyard pass with scannable vector QR code, barcode, security seal, and print-ready PDF stylesheet.
+- **"My Passes" Vault Modal:** Logged-in students can view and review all active competition passes they have registered for at any time.
+- **Duplicate Registration Prevention:** Enforces one verified pass per competition per student identity.
 - **Persistent Dark / Light Theme Engine:** Smooth theme switching powered by CSS Custom Properties and synchronized with browser `localStorage` and system `prefers-color-scheme`.
-- **Accessible Sticky Navigation:** Glassmorphic header with backdrop blur, active section scrollspy tracking, and a fully accessible mobile drawer menu.
+- **Accessible Sticky Navigation:** Glassmorphic header with dynamic authentication pill, backdrop blur, active section scrollspy tracking, and a fully accessible mobile drawer menu.
 - **Interactive Event Showcase:** Responsive CSS Grid featuring 6 flagship competitions with metadata badges and direct registration pre-selection shortcuts.
 - **Event Timeline Schedule:** Structured agenda with timeline markers, time slots, and venue badges.
-- **Client-Side Registration & Pass Generator:** Accessible form validation with inline real-time error handling, regex email verification, and simulated ticket pass generation without page reloads.
 - **Mobile-First Responsive Architecture:** Tested across mobile (360px–390px), tablet (768px–1023px), and desktop (1024px+) viewports.
 - **Accessibility & Motion Standards:** Full keyboard navigation, ARIA attributes, semantic landmarks, high contrast ratios, and `prefers-reduced-motion` support.
 
@@ -59,8 +62,9 @@ techfest-2026/
 │   ├── countdown.js            # Precise countdown timer logic & zero-state handler
 │   ├── theme.js                # Dark/light theme manager & localStorage persistence
 │   ├── navigation.js           # Hamburger menu drawer, outside click, scrollspy
-│   ├── form.js                 # Validation, inline feedback & pass generation
-│   └── script.js               # Application bootstrapper on DOMContentLoaded
+│   ├── auth.js                 # Student accounts, authentication, session & pass storage
+│   ├── form.js                 # Competition pass application, badge rendering & print handler
+│   └── script.js               # Application coordinator initializing all modules on DOMContentLoaded
 │
 ├── assets/
 │   ├── icons/
@@ -168,3 +172,4 @@ To publish this project live for portfolio presentations or job interviews:
 ## 10. License
 
 Created for educational, demonstration, and developer portfolio purposes. Open source under the MIT License.
+
